@@ -1,0 +1,75 @@
+.weather-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  transition: background 1s ease;
+}
+
+/* Day & Night Gradient */
+.day-clear {
+  background: linear-gradient(#4facfe, #00f2fe);
+}
+
+.day-clouds {
+  background: linear-gradient(#9ebff9, #6b7fa1);
+}
+
+.day-rain {
+  background: linear-gradient(#4e5d6c, #2f3a48);
+}
+
+.day-snow {
+  background: linear-gradient(#dff1ff, #9bbad1);
+}
+
+.night-clear {
+  background: linear-gradient(#0b1b44, #020617);
+}
+
+.night-clouds {
+  background: linear-gradient(#2d3a55, #1b263b);
+}
+
+.night-rain {
+  background: linear-gradient(#1a1f29, #0f141b);
+}
+
+.night-snow {
+  background: linear-gradient(#ccd7e0, #8ba3b8);
+}
+
+/* Sun Glow */
+.sun-glow {
+  position: fixed;
+  top: 20%;
+  left: 70%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,255,200,0.9), transparent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Moon Glow */
+.moon-glow {
+  position: fixed;
+  top: 15%;
+  left: 70%;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(200,200,255,0.8), transparent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Lightning Overlay */
+.lightning-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  transition: background 0.2s;
+  z-index: -1;
+}
