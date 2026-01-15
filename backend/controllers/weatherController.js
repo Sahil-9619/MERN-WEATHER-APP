@@ -21,6 +21,7 @@ const getWeather = async(req,res)=>{
                 feelsLike: data.main.feels_like,
                 humidity: data.main.humidity,
                 windSpeed: data.wind.speed,
+                 main: data.weather[0].main, 
                 description: data.weather[0].description,
                 icon: data.weather[0].icon
                 })
